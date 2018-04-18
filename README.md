@@ -28,21 +28,51 @@ public class MainActivity extends Activity implements OnHeadGestureListener {
         …
         mHeadGestureDetector.stop();
     }
-
+    
     @Override
-    public void onNod() {
+    public void onOrientationChanged(float[] orientationValues) {
         // Do something
     }
+
+    @Override
+    public void onLookUp() {
+        // Do something
+    } 
+
+    @Override
+    public void onLookDown() {
+        // Do something
+    } 
+
+    @Override
+    public void onBackLookUp(double initAzimuth) {
+        // Do something
+    } 
+
+    @Override
+    public void onBackLookDown() {
+        // Do something
+    } 
 
     @Override
     public void onShakeToLeft() {
         // Do something
-    }
+    } 
 
     @Override
     public void onShakeToRight() {
         // Do something
-    }
+    } 
+
+    @Override
+    public void onShakeBackToLeft() {
+        // Do something
+    } 
+
+    @Override
+    public void onShakeBackToRight() {
+        // Do something
+    } 
 }
 ```
 
